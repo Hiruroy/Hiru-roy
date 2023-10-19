@@ -185,8 +185,8 @@ gsap.to(".bransvg", {
   },
   scrollTrigger: {
     trigger: ".bransvg",
-    start: "top center",
-    end: "bottom center",
+    start: "center bottom",
+    end: "center bottom",
     // markers: true,
 
     scrub: .1,
@@ -277,8 +277,8 @@ gsap.to(".butterfly", {
   },
   scrollTrigger: {
     trigger: ".butterfly",
-    start: "center 80%",
-    end: "center 30%",
+    start: "center bottom",
+    end: "center bottom",
     // markers: true,
 
     scrub: 0.1,
@@ -408,18 +408,20 @@ gsap.to(".ship", {
 
   onStart: function ship() {
     var $ship = $(".ship").drawsvg({
-      duration: 1000,
+      duration:1000,
+      stagger:10,
     });
 
     $ship.drawsvg("animate");
   },
   scrollTrigger: {
     trigger: ".ship",
-    start: "center 80%",
-    end: "center 30%",
+    start: "center 100%",
+    end: "center 100%",
     // markers: true,
 
-    scrub: 0.1,
+    scrub: 0.01,
+    
   },
 });
 
@@ -621,25 +623,7 @@ gsap.to(".grow", {
 // =======project==========
 
 
-gsap.to(".jhaj", {
-  visibility: "visible",
 
-  onStart: function ship() {
-    var $ship = $(".jhaj").drawsvg({
-      duration: 1000,
-    });
-
-    $ship.drawsvg("animate");
-  },
-  scrollTrigger: {
-    trigger: ".jhaj",
-    start: "center 200%",
-    end: "center 200%",
-    // markers: true,
-
-    scrub: 0.1,
-  },
-});
 
 //=============================
 
@@ -678,15 +662,15 @@ gsap.to(".projectsvg", {
 
   onStart: function projectsvg() {
     var $projectsvg = $(".projectsvg").drawsvg({
-      duration: 3000,
+      duration: 5000,
     });
 
     $projectsvg.drawsvg("animate");
   },
   scrollTrigger: {
     trigger: ".projectsvg",
-    start: "center 80%",
-        end: "center 20%",
+    start: "center bottom",
+    end: "center bottom",
     // markers: true,
 
     scrub: 0.1,
@@ -699,14 +683,14 @@ gsap.fromTo(
   "#one",
   {
     duration: 5,
-    drawSVG: "0% 5%",
+  
 
     ease: "power3.out",
-    stroke: "gray",
+    
   },
   {
     duration: 5,
-    drawSVG: "100% 100%",
+    
 
     ease: "power3.out",
 
@@ -720,6 +704,10 @@ gsap.fromTo(
     },
   }
 );
+
+
+
+
 // ================
 gsap.to("#one", {
   duration: 5,
@@ -774,13 +762,13 @@ gsap.fromTo(
   "#two",
   {
     duration: 5,
-    drawSVG: "0% 5%",
+   
     ease: "power3.out",
-    stroke: "gray",
+    
   },
   {
     duration: 5,
-    drawSVG: "100% 100%",
+
     ease: "power3.out",
 
     scrollTrigger: {
@@ -811,6 +799,8 @@ gsap.to("#two", {
     pin: ".project_content",
   },
 });
+
+
 // =================
 
 gsap.to(".right2 .filter", {
@@ -846,14 +836,14 @@ gsap.fromTo(
   "#three",
   {
     duration: 5,
-    drawSVG: "0% 5%",
+   
 
     ease: "power3.out",
-    stroke: "gray",
+    
   },
   {
     duration: 5,
-    drawSVG: "100% 100%",
+   
 
     ease: "power3.out",
 
@@ -918,14 +908,14 @@ gsap.fromTo(
   "#four",
   {
     duration: 5,
-    drawSVG: "0% 5%",
+   
 
     ease: "power3.out",
-    stroke: "gray",
+    
   },
   {
     duration: 5,
-    drawSVG: "100% 100%",
+   
 
     ease: "power3.out",
 
@@ -941,7 +931,7 @@ gsap.fromTo(
 );
 gsap.to("#four", {
   duration: 5,
-  drawSVG: "0% 100%",
+
 
   ease: "power3.out",
 

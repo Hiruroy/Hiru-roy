@@ -56,6 +56,7 @@ body {
   overflow-x: hidden;
   background: var(--pcolor);
   background: url(img/bg.svg);
+ 
 
   color: #ededed;
 }
@@ -820,7 +821,7 @@ body {
     .ship {
       width: 110%;
       height: 110%;
-      stroke-width: 4px;
+      stroke-width: 1.3px;
       visibility: hidden;
     }
     .journey_content {
@@ -1099,6 +1100,7 @@ body {
     // background-color: rgb(249, 190, 190);
 .tvv{
 visibility: hidden;
+fill: none;
 }
     .footer_content {
       width: 80%;

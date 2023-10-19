@@ -705,7 +705,7 @@ body {
 .main #journey .ship {
   width: 110%;
   height: 110%;
-  stroke-width: 4px;
+  stroke-width: 1.3px;
   visibility: hidden;
 }
 .main #journey .journey_content {
@@ -932,6 +932,7 @@ body {
 }
 .main #footer .tvv {
   visibility: hidden;
+  fill: none;
 }
 .main #footer .footer_content {
   width: 80%;
