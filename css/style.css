@@ -1029,6 +1029,9 @@ body {
   .section_top .section_dot {
     font-size: 30px;
   }
+  .main {
+    font-stretch: 500%;
+  }
   .main header .sidebar nav ul li {
     padding: 15px 0;
   }
@@ -1036,18 +1039,18 @@ body {
     font-size: 10vw;
   }
   .main header .name_content .content {
-    margin-top: 1rem !important;
+    margin-top: 1rem;
   }
   .main header .name_content .content span {
-    font-size: 4.5vw !important;
+    font-size: 4.5vw;
   }
   .main header .name_content .content .name {
-    width: 80vw !important;
+    width: 80vw;
   }
   .main header .name_content .content p {
     padding-top: 3vh;
-    text-align: center !important;
-    font-size: 5vw !important;
+    text-align: center;
+    font-size: 4vw;
     letter-spacing: 5px;
   }
   .main #about {
@@ -1154,6 +1157,7 @@ body {
     margin-top: 250px;
   }
   .main #featured {
+    display: none;
     margin-top: 40vw;
   }
   .main #featured .fixed {
@@ -1184,13 +1188,15 @@ body {
     font-size: 30px;
   }
   .main #featured .scroll_content .clip_path {
-    padding-top: 80px !important;
+    padding-top: 80px;
+    -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
   }
   .main #featured .scroll_content .clip_path .featured_top {
     align-items: center;
   }
   .main #featured .scroll_content .clip_path .featured_top .featured_svg {
-    width: 30vw !important;
+    width: 30vw;
   }
   .main #featured .scroll_content .clip_path .featured_top .featured_h {
     font-size: 15vw;

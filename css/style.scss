@@ -607,6 +607,7 @@ body {
     .fixed {
       height: 105vh;
       padding-top: 25px;
+      // background-color: red;
 
       .featured_top {
         display: flex;
@@ -667,6 +668,7 @@ body {
       left: 0%;
 
       display: flex;
+      // flex-direction: column;
 
       .clip_path {
         min-width: 100vw;
@@ -1216,6 +1218,8 @@ visibility: visible !important;
     }
   }
   .main {
+    font-stretch: 500%;
+
     header {
       .sidebar {
         nav {
@@ -1239,18 +1243,19 @@ visibility: visible !important;
         .content {
           // background-color: #b86b1d;
 
-          margin-top: 1rem !important;
+          margin-top: 1rem ;
 
           span {
-            font-size: 4.5vw !important;
+            font-size: 4.5vw ;
           }
           .name {
-            width: 80vw !important;
+            width: 80vw ;
+            
           }
           p {
             padding-top: 3vh;
-            text-align: center !important;
-            font-size: 5vw !important;
+            text-align: center ;
+            font-size: 4vw;
             letter-spacing: 5px;
           }
         }
@@ -1383,6 +1388,7 @@ visibility: visible !important;
     // ============featured==============
 
     #featured {
+      display: none;
       margin-top: 40vw;
 
       .fixed {
@@ -1417,13 +1423,18 @@ visibility: visible !important;
         }
       }
       .scroll_content {
+        // flex-direction: column;
+     
         .clip_path {
-          padding-top: 80px !important;
+          padding-top: 80px ;
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+
 
           .featured_top {
             align-items: center;
+
             .featured_svg {
-              width: 30vw !important;
+              width: 30vw ;
             }
 
             .featured_h {
@@ -1454,6 +1465,7 @@ visibility: visible !important;
         .scroll_content_item {
           // height: 80vh;
           // background-color: gold;
+         
           .scroll_content_item_left {
             // background-color: red;
             width: 90%;
