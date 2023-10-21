@@ -999,9 +999,6 @@ body {
 }
 
 @media (max-width: 700px) {
-  * {
-    font-stretch: 500%;
-  }
   .svg {
     visibility: visible !important;
   }
@@ -1039,18 +1036,18 @@ body {
     font-size: 10vw;
   }
   .main header .name_content .content {
-    margin-top: 1rem;
+    margin-top: 1rem !important;
   }
   .main header .name_content .content span {
-    font-size: 4.5vw;
+    font-size: 4.5vw !important;
   }
   .main header .name_content .content .name {
-    width: 80vw;
+    width: 80vw !important;
   }
   .main header .name_content .content p {
     padding-top: 3vh;
-    text-align: center;
-    font-size: 4vw;
+    text-align: center !important;
+    font-size: 5vw !important;
     letter-spacing: 5px;
   }
   .main #about {
@@ -1157,7 +1154,6 @@ body {
     margin-top: 250px;
   }
   .main #featured {
-    display: none;
     margin-top: 40vw;
   }
   .main #featured .fixed {
@@ -1188,15 +1184,13 @@ body {
     font-size: 30px;
   }
   .main #featured .scroll_content .clip_path {
-    padding-top: 80px;
-    -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+    padding-top: 80px !important;
   }
   .main #featured .scroll_content .clip_path .featured_top {
     align-items: center;
   }
   .main #featured .scroll_content .clip_path .featured_top .featured_svg {
-    width: 30vw;
+    width: 30vw !important;
   }
   .main #featured .scroll_content .clip_path .featured_top .featured_h {
     font-size: 15vw;
