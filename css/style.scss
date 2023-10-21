@@ -1183,6 +1183,10 @@ fill: none;
 // ===========@media==============
 
 @media (max-width: 700px) {
+  *{
+      font-stretch: 500%;
+
+  }
 .svg{
 visibility: visible !important;
   
@@ -1218,7 +1222,6 @@ visibility: visible !important;
     }
   }
   .main {
-    font-stretch: 500%;
 
     header {
       .sidebar {

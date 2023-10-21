@@ -999,6 +999,9 @@ body {
 }
 
 @media (max-width: 700px) {
+  * {
+    font-stretch: 500%;
+  }
   .svg {
     visibility: visible !important;
   }
@@ -1028,9 +1031,6 @@ body {
   }
   .section_top .section_dot {
     font-size: 30px;
-  }
-  .main {
-    font-stretch: 500%;
   }
   .main header .sidebar nav ul li {
     padding: 15px 0;
