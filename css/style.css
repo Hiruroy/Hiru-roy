@@ -1002,6 +1002,9 @@ body {
   .svg {
     visibility: visible !important;
   }
+  * {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  }
   .section_top {
     align-items: center;
   }
@@ -1028,9 +1031,6 @@ body {
   }
   .section_top .section_dot {
     font-size: 30px;
-  }
-  .main header {
-    font-stretch: 500%;
   }
   .main header .sidebar nav ul li {
     padding: 15px 0;
