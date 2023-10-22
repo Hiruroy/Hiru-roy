@@ -1003,7 +1003,7 @@ body {
     visibility: visible !important;
   }
   * {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+    font-stretch: 500%;
   }
   .section_top {
     align-items: center;
