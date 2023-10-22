@@ -1153,6 +1153,19 @@ body {
     width: 90%;
     margin-top: 250px;
   }
+  .main #skills .Shaping {
+    width: 80%;
+    margin: auto;
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 200px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px white;
+    background-image: url(https://i.gifer.com/3BBS.gif);
+    color: transparent;
+    background-size: 100% 100%;
+  }
   .main #featured {
     margin-top: 40vw;
   }
