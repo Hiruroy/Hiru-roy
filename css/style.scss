@@ -1217,6 +1217,7 @@ visibility: visible !important;
   }
   .main {
     header {
+      font-stretch: 500%;
       .sidebar {
         nav {
           ul {
@@ -1389,7 +1390,7 @@ visibility: visible !important;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-stroke: 1px white;
-      background-image: url(https://i.gifer.com/3BBS.gif);
+      background-image: unset;
       color: transparent;
       background-size: 100% 100%;
     }

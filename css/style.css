@@ -1029,6 +1029,9 @@ body {
   .section_top .section_dot {
     font-size: 30px;
   }
+  .main header {
+    font-stretch: 500%;
+  }
   .main header .sidebar nav ul li {
     padding: 15px 0;
   }
@@ -1162,7 +1165,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 1px white;
-    background-image: url(https://i.gifer.com/3BBS.gif);
+    background-image: unset;
     color: transparent;
     background-size: 100% 100%;
   }
