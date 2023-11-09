@@ -1152,25 +1152,17 @@ body {
     background-size: 100% 100%;
   }
   .main #skills .Shaping {
-    font-size: 20vw;
+    font-size: 18vw;
     width: 90%;
     margin-top: 250px;
-  }
-  .main #skills .Shaping {
-    width: 80%;
-    margin: auto;
-    font-family: Montserrat;
-    text-align: center;
-    margin-top: 200px;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 1px white;
     background-image: unset;
-    color: transparent;
-    background-size: 100% 100%;
   }
   .main #featured {
     margin-top: 40vw;
+    visibility: hidden;
   }
   .main #featured .fixed {
     padding-top: 80px !important;

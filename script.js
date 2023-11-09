@@ -47,6 +47,244 @@ poss.addEventListener("mousemove", (e) => {
 
 // =========scrolltop========
 
+// ===============
+
+var hir = $(".hirrr").drawsvg({
+  duration: 3000,
+});
+hir.drawsvg("animate");
+// =======nam=end=========
+
+const fonttt = new SplitType(".font_dev", { types: " chars" });
+gsap.from(fonttt.chars, {
+  delay: 1,
+  display: "none",
+
+  duration: 0.1,
+  scale: 4,
+  opacity: 0,
+  markers: true,
+  x: 200,
+  // rotate: 360,
+  ease: "linear",
+  stagger: {
+    each: 0.1,
+    from: "random",
+  },
+});
+
+// =======dev=end=========
+
+// =======about=start=========
+
+var hell = gsap.timeline();
+
+const text = new SplitType(".hello_h", { types: " chars" });
+
+hell.from(text.chars, {
+  scale: 4,
+  opacity: 0,
+  stagger: {
+    each: 0.09,
+    from: "random",
+  },
+  scrollTrigger: {
+    trigger: ".hello_h",
+    start: "center 80%",
+    end: "center 50%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+
+// =========engaging===========
+var eng = gsap.timeline();
+
+const engaging = new SplitType(".engaging", { types: " chars" });
+
+eng.from(engaging.chars, {
+  opacity: 0.3,
+  duration: 2,
+  stagger: {
+    each: 1,
+    // from: "random",
+  },
+  scrollTrigger: {
+    trigger: ".hello_h",
+    start: "center 50%",
+    end: "center -50%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+// =========four_year===========
+
+const four_year = new SplitType(".four_year", { types: " lines" });
+
+gsap.from(four_year.lines, {
+  duration: 1,
+  y: 40,
+  rotate: 40,
+  scale: 29,
+  transformOrigin: "center",
+  opacity: 0,
+  stagger: {
+    each: 0.1,
+  },
+  scrollTrigger: {
+    trigger: ".four_year",
+    start: "top 110%",
+    end: "bottom 110%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+
+gsap.to(".innerabout,.outerabout", {
+  duration: 3,
+  left: "50%",
+  ease: "linear",
+  scrollTrigger: {
+    trigger: ".innerabout,.outerabout",
+    start: "center 100%",
+    end: "center 30%",
+    // markers: true,
+    scrub: 2,
+  },
+});
+// ========about won img===========
+gsap.from(".white_about img", {
+  duration: 0.2,
+  scale: 2,
+  ease: "power1.inOut",
+  scrollTrigger: {
+    trigger: ".white_about img",
+    start: "center 110%",
+    end: "center 50%",
+    // markers: true,
+    scrub: 3,
+  },
+});
+
+// =========skill head===========
+// =========skill head===========
+
+
+gsap.to(".bransvg", {
+
+  visibility: "visible",
+
+ 
+  onStart: function brann() {
+    var $bransvg = $(".bransvg").drawsvg({
+      duration: 1000,
+    });
+
+    $bransvg.drawsvg("animate");
+   
+  },
+  scrollTrigger: {
+    trigger: ".bransvg",
+    start: "center bottom",
+    end: "center bottom",
+    // markers: true,
+
+    scrub: .1,
+    // pin: true,
+  },
+});
+// =========skill heading===========
+
+const skills_h = new SplitType(".skills_h", { types: " chars" });
+
+gsap.to(skills_h.chars, {
+  duration: 2,
+  y: -30,
+  opacity: 1,
+  ease: "back.out(1.7)",
+  stagger: {
+    each: 0.1,
+    // from: "random",
+  },
+  scrollTrigger: {
+    trigger: ".skills_h",
+    start: "center 90%",
+    end: "center 85%",
+    // markers: true,
+    scrub: 2,
+  },
+});
+
+gsap.from(".container_right_item", {
+  duration: 2,
+  y: 50,
+  opacity: 0,
+  ease: "back.out(1.7)",
+  stagger: {
+    each: 0.1,
+    from: "random",
+  },
+  scrollTrigger: {
+    trigger: ".container_right",
+    start: "top 70%",
+    end: "top 20%",
+    // markers: true,
+    scrub: 2,
+  },
+});
+
+const Shaping = new SplitType(".Shaping", { types: " chars" });
+
+gsap.to(Shaping.chars, {
+  duration: 0.1,
+  color: "white",
+  // ease: "back.out(1.7)",
+  stagger: {
+    each: 0.1,
+    from: "random",
+  },
+  scrollTrigger: {
+    trigger: ".Shaping",
+    start: "center center",
+    end: "center -100%",
+    // markers: true,
+    scrub: 0.1,
+    pin: ".Shaping",
+  },
+});
+// =========setting heading===========
+
+gsap.to(".setting", {
+  duration: 10,
+  rotate: 360,
+  // yoyo: true,
+  transformOrigin: "center",
+  ease: "linear",
+  repeat: -1,
+});
+// =====featured_h heading===========
+
+
+gsap.to(".butterfly", {
+  visibility: "visible",
+
+  onStart: function butterfly() {
+    var $butterfly = $(".butterfly").drawsvg({
+      duration: 1000,
+    });
+
+    $butterfly.drawsvg("animate");
+  },
+  scrollTrigger: {
+    trigger: ".butterfly",
+    start: "center bottom",
+    end: "center bottom",
+    // markers: true,
+
+    scrub: 0.1,
+  },
+});
+
 
 // =================
 
@@ -109,7 +347,56 @@ gsap.to(
 let mmm = gsap.matchMedia();
 
 mmm.add("(min-width:1000px)", () => {
- 
+  gsap.to(".ecomb,.ecoms", {
+    duration: 1,
+    x: -200,
+    // opacity: 0,
+    // horizontal: true,
+    stagger: {
+      each: 0.4,
+    },
+    scrollTrigger: {
+      trigger: ".ecomb",
+      start: "440% center",
+      end: "440% -100%",
+      // markers: true,
+      scrub: 2,
+      // pin: "#featured",
+    },
+  });
+
+  gsap.to(".trab,.tras", {
+    duration: 1,
+    x: -200,
+    // opacity: 0,
+    // horizontal: true,
+    stagger: {
+      each: 0.4,
+    },
+    scrollTrigger: {
+      trigger: ".trab",
+      start: "640% center",
+      end: "640% -100%",
+      // markers: true,
+      scrub: 2,
+    },
+  });
+
+  gsap.to(".delb,.dels", {
+    duration: 1,
+    x: -100,
+
+    stagger: {
+      each: 0.4,
+    },
+    scrollTrigger: {
+      trigger: ".delb",
+      start: "1000% center",
+      end: "1000% -100%",
+      // markers: true,
+      scrub: 2,
+    },
+  });
 });
 // ===============
 
@@ -182,292 +469,8 @@ gsap.to(".journey_content_item", {
 let jureny_head = gsap.matchMedia();
 
 jureny_head.add("(min-width:700px)", () => {
-  // 0000000000000000000000
-  // ===============
-
-  var hir = $(".hirrr").drawsvg({
-    duration: 3000,
-  });
-  hir.drawsvg("animate");
-  // =======nam=end=========
-
-  const fonttt = new SplitType(".font_dev", { types: " chars" });
-  gsap.from(fonttt.chars, {
-    delay: 1,
-    display: "none",
-
-    duration: 0.1,
-    scale: 4,
-    opacity: 0,
-    markers: true,
-    x: 200,
-    // rotate: 360,
-    ease: "linear",
-    stagger: {
-      each: 0.1,
-      from: "random",
-    },
-  });
-
-  // =======dev=end=========
-
-  // =======about=start=========
-
-  var hell = gsap.timeline();
-
-  const text = new SplitType(".hello_h", { types: " chars" });
-
-  hell.from(text.chars, {
-    scale: 4,
-    opacity: 0,
-    stagger: {
-      each: 0.09,
-      from: "random",
-    },
-    scrollTrigger: {
-      trigger: ".hello_h",
-      start: "center 80%",
-      end: "center 50%",
-      // markers: true,
-      scrub: 1,
-    },
-  });
-
-  // =========engaging===========
-  var eng = gsap.timeline();
-
-  const engaging = new SplitType(".engaging", { types: " chars" });
-
-  eng.from(engaging.chars, {
-    opacity: 0.3,
-    duration: 2,
-    stagger: {
-      each: 1,
-      // from: "random",
-    },
-    scrollTrigger: {
-      trigger: ".hello_h",
-      start: "center 50%",
-      end: "center -50%",
-      // markers: true,
-      scrub: 1,
-    },
-  });
-  // =========four_year===========
-
-  const four_year = new SplitType(".four_year", { types: " lines" });
-
-  gsap.from(four_year.lines, {
-    duration: 1,
-    y: 40,
-    rotate: 40,
-    scale: 29,
-    transformOrigin: "center",
-    opacity: 0,
-    stagger: {
-      each: 0.1,
-    },
-    scrollTrigger: {
-      trigger: ".four_year",
-      start: "top 110%",
-      end: "bottom 110%",
-      // markers: true,
-      scrub: 1,
-    },
-  });
-
-  gsap.to(".innerabout,.outerabout", {
-    duration: 3,
-    left: "50%",
-    ease: "linear",
-    scrollTrigger: {
-      trigger: ".innerabout,.outerabout",
-      start: "center 100%",
-      end: "center 30%",
-      // markers: true,
-      scrub: 2,
-    },
-  });
-  // ========about won img===========
-  gsap.from(".white_about img", {
-    duration: 0.2,
-    scale: 2,
-    ease: "power1.inOut",
-    scrollTrigger: {
-      trigger: ".white_about img",
-      start: "center 110%",
-      end: "center 50%",
-      // markers: true,
-      scrub: 3,
-    },
-  });
-
-  // =========skill head===========
-  // =========skill head===========
-
-  gsap.to(".bransvg", {
-    visibility: "visible",
-
-    onStart: function brann() {
-      var $bransvg = $(".bransvg").drawsvg({
-        duration: 1000,
-      });
-
-      $bransvg.drawsvg("animate");
-    },
-    scrollTrigger: {
-      trigger: ".bransvg",
-      start: "center bottom",
-      end: "center bottom",
-      // markers: true,
-
-      scrub: 0.1,
-      // pin: true,
-    },
-  });
-  // =========skill heading===========
-
-  const skills_h = new SplitType(".skills_h", { types: " chars" });
-
-  gsap.to(skills_h.chars, {
-    duration: 2,
-    y: -30,
-    opacity: 1,
-    ease: "back.out(1.7)",
-    stagger: {
-      each: 0.1,
-      // from: "random",
-    },
-    scrollTrigger: {
-      trigger: ".skills_h",
-      start: "center 90%",
-      end: "center 85%",
-      // markers: true,
-      scrub: 2,
-    },
-  });
-
-  gsap.from(".container_right_item", {
-    duration: 2,
-    y: 50,
-    opacity: 0,
-    ease: "back.out(1.7)",
-    stagger: {
-      each: 0.1,
-      from: "random",
-    },
-    scrollTrigger: {
-      trigger: ".container_right",
-      start: "top 70%",
-      end: "top 20%",
-      // markers: true,
-      scrub: 2,
-    },
-  });
-
-  const Shaping = new SplitType(".Shaping", { types: " chars" });
-
-  gsap.to(Shaping.chars, {
-    duration: 0.1,
-    color: "white",
-    // ease: "back.out(1.7)",
-    stagger: {
-      each: 0.1,
-      from: "random",
-    },
-    scrollTrigger: {
-      trigger: ".Shaping",
-      start: "center center",
-      end: "center -100%",
-      // markers: true,
-      scrub: 0.1,
-      pin: ".Shaping",
-    },
-  });
-  // =========setting heading===========
-
-  gsap.to(".setting", {
-    duration: 10,
-    rotate: 360,
-    // yoyo: true,
-    transformOrigin: "center",
-    ease: "linear",
-    repeat: -1,
-  });
-  // =====featured_h heading===========
-
-  gsap.to(".butterfly", {
-    visibility: "visible",
-
-    onStart: function butterfly() {
-      var $butterfly = $(".butterfly").drawsvg({
-        duration: 1000,
-      });
-
-      $butterfly.drawsvg("animate");
-    },
-    scrollTrigger: {
-      trigger: ".butterfly",
-      start: "center bottom",
-      end: "center bottom",
-      // markers: true,
-
-      scrub: 0.1,
-    },
-  });
-
-  // 0000000000000000000000
   // ==========be=============
-  gsap.to(".ecomb,.ecoms", {
-    duration: 1,
-    x: -200,
-    // opacity: 0,
-    // horizontal: true,
-    stagger: {
-      each: 0.4,
-    },
-    scrollTrigger: {
-      trigger: ".ecomb",
-      start: "440% center",
-      end: "440% -100%",
-      // markers: true,
-      scrub: 2,
-      // pin: "#featured",
-    },
-  });
 
-  gsap.to(".trab,.tras", {
-    duration: 1,
-    x: -200,
-    // opacity: 0,
-    // horizontal: true,
-    stagger: {
-      each: 0.4,
-    },
-    scrollTrigger: {
-      trigger: ".trab",
-      start: "640% center",
-      end: "640% -100%",
-      // markers: true,
-      scrub: 2,
-    },
-  });
-
-  gsap.to(".delb,.dels", {
-    duration: 1,
-    x: -100,
-
-    stagger: {
-      each: 0.4,
-    },
-    scrollTrigger: {
-      trigger: ".delb",
-      start: "1000% center",
-      end: "1000% -100%",
-      // markers: true,
-      scrub: 2,
-    },
-  });
   const be = new SplitType(".be", { type: "chars" });
   gsap.from(be.chars, {
     duration: 2,

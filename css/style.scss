@@ -1378,33 +1378,24 @@ visibility: visible !important;
         }
       }
       .Shaping {
-        font-size: 20vw;
+        font-size: 18vw;
         width: 90%;
         margin-top: 250px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 1px white;
+        background-image: unset;
       }
-        .Shaping {
-      // font-size: 10vw;
-      width: 80%;
-      margin: auto;
-      font-family: Montserrat;
-      text-align: center;
-      margin-top: 200px;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-stroke: 1px white;
-      background-image: unset;
-      color: transparent;
-      background-size: 100% 100%;
-    }
+     
     }
     // ============featured==============
 
     #featured {
       margin-top: 40vw;
 
+     visibility: hidden;
       .fixed {
         padding-top: 80px !important;
-
         .featured_top {
           align-items: center;
           .featured_svg {
@@ -1434,6 +1425,7 @@ visibility: visible !important;
         }
       }
       .scroll_content {
+  
         .clip_path {
           padding-top: 80px !important;
 
